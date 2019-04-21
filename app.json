@@ -1,0 +1,7 @@
+{
+  "name":"Richard's Portfolio",
+  "description":"New Portfolio",
+  "repository": "https://github.com/rlorenzini/Portfolio.git",
+  "keywords": ["node", "express"],
+  "image": "heroku/nodejs"
+}
