@@ -46,7 +46,7 @@ app.post('/ContactForm', function (req, res) {
     name: ${req.body.name}
     email:(${req.body.email})
     subject: (${req.body.subject})
-    message:(${req.body.address})
+    message:(${req.body.message})
 
     `
   };
