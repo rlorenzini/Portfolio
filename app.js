@@ -3,7 +3,9 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const app = express();
 const bodyParser = require('body-parser');
- 
+const GMAIL_USER = process.env.GMAIL_USER;
+const GMAIL_PASS = process.env.GMAIL_PASS;
+
 app.engine('mustache', mustacheExpress());
 app.set('view engine', 'mustache');
 app.set('views', './views');
@@ -31,8 +33,8 @@ app.post('/ContactForm', function (req, res) {
     port: 465,
     secure: true,
     auth: {
-      user: 'MichaelPortfolioSite17@gmail.com',
-      pass: 'Portfolio1!'
+      user: GMAIL_USER,
+      pass: GMAIL_PASS
     }
   });
   mailOpts = {
